@@ -23,28 +23,30 @@
   "main": "./index.ts",
   "exports": {
     ".": "./index.ts",
-    "./types": "./types.ts",
-    "./middleware": "./middleware.ts",
     "./env.d.ts": "./env.d.ts",
-    "./pages": "./pages/*",
-    "./db": "./db/*",
-    "./auth": "./auth/*"
+    "./assets/*": "./assets/*",
+    "./pages/*": "./pages/*"
   },
   "files": [
-    "./components/**",
-    "./layouts/**",
-    "./libs/**",
-    "./pages/**",
+    "./assets/**/*",
+    "./components/**/*",
+    "./layouts/**/*",
+    "./libs/**/*",
+    "./pages/**/*",
     "./*.d.ts",
-    "./*.ts"
+    "./*.ts",
+    "./package.json"
   ],
   "dependencies": {
     "@libsql/client": "^0.14.0",
+    "@popperjs/core": "^2.11.8",
     "better-auth": "^1.1.11",
+    "bootstrap": "^5.3.3",
     "drizzle-orm": "^0.38.3",
     "nodemailer": "^6.9.16"
   },
   "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
     "@types/node": "^22.10.5",
     "astro": "^5.1.5"
   },

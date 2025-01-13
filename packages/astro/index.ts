@@ -12,7 +12,7 @@ export default function Comments(): AstroIntegration {
         // Inject the comments router for serving all the comments requests.
         registerPages(injectRoute);
         // Inject the auth middleware for having the auth context.
-        addMiddleware({ order: 'pre', entrypoint: new URL('./auth/middleware.ts', import.meta.url) });
+        addMiddleware({ order: 'pre', entrypoint: new URL('./libs/auth/middleware.ts', import.meta.url) });
         // Add the required environment variables to astro configuration.
         updateConfig({
           env: {
