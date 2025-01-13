@@ -1,6 +1,6 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": ["**/*"],
+  "include": ["**/*", "../../apps/playground/tailwind.config.ts"],
   "exclude": ["dist"],
   "esModuleInterop": true,
   "compilerOptions": {

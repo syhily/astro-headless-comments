@@ -1,6 +1,7 @@
 import mdx from '@astrojs/mdx';
 import node from '@astrojs/node';
 import sitemap from '@astrojs/sitemap';
+import tailwind from '@astrojs/tailwind';
 import comments from 'astro-headless-comments';
 import { defineConfig } from 'astro/config';
 
@@ -12,6 +13,6 @@ export default defineConfig({
   adapter: node({
     mode: 'standalone',
   }),
-  integrations: [mdx(), sitemap(), comments()],
+  integrations: [mdx(), sitemap(), comments(), tailwind({ configFile: './tailwind.config.ts' })],
   output: 'server',
 });

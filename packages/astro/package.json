@@ -20,13 +20,13 @@
   "author": "Yufan Sheng <syhily@gmail.com>",
   "sideEffects": false,
   "type": "module",
-  "main": "./index.ts",
   "exports": {
     ".": "./index.ts",
     "./env.d.ts": "./env.d.ts",
     "./assets/*": "./assets/*",
     "./pages/*": "./pages/*"
   },
+  "main": "./index.ts",
   "files": [
     "./assets/**/*",
     "./components/**/*",
@@ -39,17 +39,16 @@
   ],
   "dependencies": {
     "@libsql/client": "^0.14.0",
-    "@popperjs/core": "^2.11.8",
+    "autoprefixer": "^10.4.20",
     "better-auth": "^1.1.11",
-    "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3",
     "drizzle-orm": "^0.38.3",
-    "nodemailer": "^6.9.16"
+    "nodemailer": "^6.9.16",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
-    "@types/bootstrap": "^5.2.10",
     "@types/node": "^22.10.5",
-    "astro": "^5.1.5"
+    "astro": "^5.1.6"
   },
   "peerDependencies": {
     "astro": "^5.0.0"
