@@ -20,6 +20,6 @@ if (process.env.NODE_ENV !== 'production') {
   globalForDb.client = client;
 }
 // Trigger the database migration.
-migrate(client);
+await migrate(client);
 
 export const db = drizzle(client, { schema });
