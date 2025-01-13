@@ -1,4 +1,4 @@
-import type { DbMigrator } from '../../types';
+import type { DbMigrator } from '../../../types';
 
 const migrate: DbMigrator = {
   statements: [

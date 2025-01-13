@@ -20,6 +20,7 @@
   "author": "Yufan Sheng <syhily@gmail.com>",
   "sideEffects": false,
   "type": "module",
+  "main": "./index.ts",
   "exports": {
     ".": "./index.ts",
     "./types": "./types.ts",
@@ -29,6 +30,14 @@
     "./db": "./db/*",
     "./auth": "./auth/*"
   },
+  "files": [
+    "./components/**",
+    "./layouts/**",
+    "./libs/**",
+    "./pages/**",
+    "./*.d.ts",
+    "./*.ts"
+  ],
   "dependencies": {
     "@libsql/client": "^0.14.0",
     "better-auth": "^1.1.11",
