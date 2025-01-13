@@ -19,6 +19,7 @@ export default function Comments(): AstroIntegration {
             schema: {
               LIBSQL_DATABASE_URL: envField.string({ context: 'server', access: 'secret' }),
               LIBSQL_AUTH_TOKEN: envField.string({ context: 'server', access: 'secret' }),
+              BETTER_AUTH_SECRET: envField.string({ context: 'server', access: 'secret' }),
             },
             validateSecrets: true,
           },

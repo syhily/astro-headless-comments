@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "lint": "biome check --write . && prettier . --write"
+    "lint": "biome check --write . && prettier . --write",
+    "dev": "cd apps/playground && npm run dev"
   },
   "lint-staged": {
     "**/*": [

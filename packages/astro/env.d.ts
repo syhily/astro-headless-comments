@@ -12,4 +12,5 @@ declare namespace App {
 declare module 'astro:env/server' {
   export const LIBSQL_DATABASE_URL: string;
   export const LIBSQL_AUTH_TOKEN: string;
+  export const BETTER_AUTH_SECRET: string;
 }

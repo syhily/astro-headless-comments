@@ -20,13 +20,16 @@ yarn add -D astro-headless-comments
 
 ## Usage
 
-Add the bellowing environment variables to your project.
+Add the bellowing environment variables to your project `.env` file.
 
 ```bash
 # The database url
 LIBSQL_DATABASE_URL=
 # The auth token, it's a base64 encoded $username:$password
 LIBSQL_AUTH_TOKEN=
+# The generate token for encrypting the auth cookies.
+# Using https://www.better-auth.com/docs/installation for generating a token.
+BETTER_AUTH_SECRET=
 ```
 
 ## Build & Release
